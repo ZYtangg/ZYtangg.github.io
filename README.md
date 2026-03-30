@@ -31,7 +31,7 @@ npm install -g @wecom/cli
 
 # 安装 CLI SKILL（必需）
 npx skills add WeComTeam/wcom-cli -y -g
-3.3 快速开始
+### 3.3 快速开始
 配置机器人凭证（仅需一次）
 bash
 运行
@@ -48,7 +48,7 @@ wecom-cli list contact
 bash
 运行
 wecom-cli call contact_get_userlist '{}'
-3.4 包含的 skills
+### 3.4 包含的 skills
 表格
 skill 所属应用	说明
 wecom-preflight	前置条件检查，确保工具权限配置正确（所有其他 skill 自动依赖）
@@ -66,4 +66,13 @@ wecom-smartsheet-schema	文档 智能表格子表与字段管理
 wecom-smartsheet-data	文档 智能表格记录增删改查
 wecom-send-media	通过 MEDIA 指令向用户发送本地文件（仅限 wecom 通道）
 wecom-send-template-card	发送结构化模板卡片消息（仅限 wecom 通道）
+
+## 4.声明
+●使用要求：CLI的使用需要用户绑定长连接方式机器人的BOT id 和Secret授权。授权后机器人将以用户身份使用对应能力。同时为避免越权，授权了CLI能力的机器人将限制仅创建者可对话，其他成员不可使用。企业微信CLI目前优先对≤10人企业开放使用。
+●风险提示：由AI agent调用CLI操作企业微信内部应用，可能受模型幻觉等影响，存在数据泄露、越权等风险。建议在测试企业中先行验证后请谨慎使用，安装使用CLI后默认用户接受潜在风险。
+
+## 5.其他指引
+
+https://doc.weixin.qq.com/doc/w3_AFYA1wY6ACoCNRxfnyGRJQaSa6jjJ?scode=AJEAIQdfAAoLJ5pm3iAFYA1wY6ACo 
+企业微信帮助中心：https://open.work.weixin.qq.com/help2/pc/21676 
 
