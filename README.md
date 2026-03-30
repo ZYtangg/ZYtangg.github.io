@@ -25,12 +25,11 @@
   4. 配置可见成员，并完成权限授权，保存即可完成机器人创建。
 
 ### 3.2 安装
-```bash
-# 安装 CLI
+安装 CLI
 npm install -g @wecom/cli
-
-# 安装 CLI SKILL（必需）
+安装 CLI SKILL（必需）
 npx skills add WeComTeam/wcom-cli -y -g
+
 ### 3.3 快速开始
 配置机器人凭证（仅需一次）
 bash
@@ -72,7 +71,6 @@ wecom-send-template-card	发送结构化模板卡片消息（仅限 wecom 通道
 ●风险提示：由AI agent调用CLI操作企业微信内部应用，可能受模型幻觉等影响，存在数据泄露、越权等风险。建议在测试企业中先行验证后请谨慎使用，安装使用CLI后默认用户接受潜在风险。
 
 ## 5.其他指引
-
 https://doc.weixin.qq.com/doc/w3_AFYA1wY6ACoCNRxfnyGRJQaSa6jjJ?scode=AJEAIQdfAAoLJ5pm3iAFYA1wY6ACo 
 企业微信帮助中心：https://open.work.weixin.qq.com/help2/pc/21676 
 
